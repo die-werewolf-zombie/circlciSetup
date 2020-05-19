@@ -20,7 +20,12 @@ jobs:
 workflows:
   version: 2
   # Name the workflow "welcome"
-  welcome:
+  welcome1:
+    jobs:
+      - welcome/run # Run the welcome/run job in its own container
+      - build
+      - build
+  welcome2:
     jobs:
       - welcome/run # Run the welcome/run job in its own container
       - build
