@@ -4,6 +4,18 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+
+jobs:   
+- build:   # Run another job called "build"
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: The First Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
+
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
@@ -11,12 +23,4 @@ workflows:
 
     jobs:   
       - welcome/run   # Run the welcome/run job in its own container
-      - build:   # Run another job called "build"
-          docker:
-            - image: alpine:3.7
-          steps:
-            - run:
-                name: The First Step
-                command: |
-                  echo 'Hello World!'
-                  echo 'This is the delivery pipeline'
+      - build
