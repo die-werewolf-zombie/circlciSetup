@@ -24,9 +24,4 @@ workflows:
     jobs:
       - welcome/run # Run the welcome/run job in its own container
       - build
-      - build
-  welcome2:
-    jobs:
-      - welcome/run # Run the welcome/run job in its own container
-      - build
-      - build
+
