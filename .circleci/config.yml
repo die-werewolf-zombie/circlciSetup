@@ -14,7 +14,7 @@ jobs:
           name: The First Step
           command: |
             echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+            exit 104
 
 # Orchestrate or schedule a set of jobs
 workflows:  
