@@ -17,7 +17,7 @@ jobs:
             echo 'This is the delivery pipeline'
 
 # Orchestrate or schedule a set of jobs
-workflows:
+workflows:  
   version: 2
   # Name the workflow "welcome"
   welcome1:
