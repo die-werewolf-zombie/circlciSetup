@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_circlciSetup_1697092696442-push-trigger-input-set
+  identifier: Build_circlciSetup_1697092696442pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Marketing_Demos
+  pipeline:
+    identifier: Build_circlciSetup_1697092696442
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
