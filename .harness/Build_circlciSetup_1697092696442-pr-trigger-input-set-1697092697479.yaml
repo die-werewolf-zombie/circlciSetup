@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_circlciSetup_1697092696442-pr-trigger-input-set
+  identifier: Build_circlciSetup_1697092696442prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Marketing_Demos
+  pipeline:
+    identifier: Build_circlciSetup_1697092696442
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
